@@ -91,8 +91,6 @@ const SubGhzProtocol* const subghz_protocol_registry_items[] = {
     /* ARF Automotive Decoders - Decoder Only */
     &subghz_protocol_suzuki,
     &subghz_protocol_subaru,
-    &subghz_protocol_vag,
-    &subghz_protocol_psa,
 };
 
 const SubGhzProtocolRegistry subghz_protocol_registry = {

@@ -62,26 +62,6 @@ static uint8_t suzuki_calculate_crc(uint64_t data) {
     return suzuki_crc8(crc_data, 6);
 }
 
-static uint8_t suzuki_custom_to_btn(uint8_t custom) {
-    switch(custom) {
-        case 1: return 3;
-        case 2: return 4;
-        case 3: return 2;
-        case 4: return 1;
-        default: return 4;
-    }
-}
-
-static uint8_t suzuki_btn_to_custom(uint8_t btn) {
-    switch(btn) {
-        case 1: return 4;
-        case 2: return 3;
-        case 3: return 1;
-        case 4: return 2;
-        default: return 2;
-    }
-}
-
 static bool suzuki_verify_crc(uint64_t data) {
     uint8_t received_crc = (data >> 4) & 0xFF;
     uint8_t calculated_crc = suzuki_calculate_crc(data);
