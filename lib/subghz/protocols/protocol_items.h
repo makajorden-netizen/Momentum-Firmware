@@ -88,3 +88,5 @@
 #include "keyfinder.h"
 #include "nord_ice.h"
 #include "allstar_firefly.h"
+/* ARF Automotive Protocols */
+#include "arf_automotive.h"
