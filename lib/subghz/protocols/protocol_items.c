@@ -88,6 +88,8 @@ const SubGhzProtocol* const subghz_protocol_registry_items[] = {
     &subghz_protocol_keyfinder,
     &subghz_protocol_nord_ice,
     &subghz_protocol_allstar_firefly,
+    /* ARF Automotive Decoders */
+    &subghz_protocol_suzuki,
 };
 
 const SubGhzProtocolRegistry subghz_protocol_registry = {
